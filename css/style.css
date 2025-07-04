@@ -1,29 +1,53 @@
-
 /*
+ДЗ 2
 Пропиши стилі для body (font-family, color та background-color)
 CSS-правила для скидання дефолтного підкреслення для посилань та маркерів у списках.
+*/
+/*
+ДЗ 3
+Обнули дефолтні маржини від браузера для:
+— заголовків та параграфів тексту
+
+— для списків потрібно обнулити дефолтні маржини та лівий падінг
+
+Зроби зображення блочними елементами
+Визнач ширину та падінги для контейнера та пропиши їх у CSS-файлі: .container
 */
 
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    /*color: #2E2F42;*/
     color: #434455;
     background-color: #fff;
 
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
-
-ul {
+p {
+    margin: 0;
+}
+ul, ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {
     text-decoration: none;
     color: currentColor;
 }
+
+.container { 
+    max-width: ;
+    padding-left:  ;
+    padding-right:  ;
+    margin-left:  ;
+    margin-right:  ;
+    }
 
 /* Header */
 .logo {
