@@ -1,0 +1,217 @@
+
+/*
+Пропиши стилі для body (font-family, color та background-color)
+CSS-правила для скидання дефолтного підкреслення для посилань та маркерів у списках.
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    /*color: #2E2F42;*/
+    color: #434455;
+    background-color: #fff;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Header */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo span {
+    color:#2e2f42;
+}
+
+.top-menu-items {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.top-menu-items .top-menu-item{
+    color:#2E2F42;
+}
+
+.top-menu-items a:hover, .top-menu-items a:focus {
+    color: #404BBF;
+} 
+.menu-contacts .contacts-item {
+    letter-spacing: 0.02em;
+}
+.menu-contacts a:hover, .menu-contacts a:focus {
+    color: #404BBF;
+} 
+address {
+    font-style: normal;
+}
+
+/* 
+Main ->
+Section main-page 
+*/
+
+.main-page {
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: #2E2F42;
+    
+}
+.main-page .main-page-header {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+.main-page .main-button {
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4D5AE5;
+}
+.main-page .main-button:hover, .main-page .main-button:focus {
+    background-color: #404BBF;
+    cursor: pointer;
+}
+
+/* 
+Main ->
+Section our-benefits
+*/
+.our-benefits .section-header {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color:#2E2F42;
+}
+
+.our-benefits .our-benefits-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:#2E2F42;
+}
+.our-benefits .our-benefits-paragraph{
+    color:#434455;
+    letter-spacing: 0.02em;
+}
+
+/* 
+Main ->
+Section our-team 
+*/
+
+.our-team {
+    text-align: center;
+    background-color: #F4F4FD;
+}
+.our-team .section-header {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color:#2E2F42;
+}
+
+.our-team li{
+    background-color: #fff;   
+}
+
+.our-team .our-team-header{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color:#2E2F42;
+}
+.our-team .our-team-paragraph{
+    color:#434455;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+/*
+Main ->
+Section our-portfolio
+*/
+
+.our-portfolio{
+    color:#434455;
+    font-size: 36px;
+    line-height: 1.11;
+
+}
+
+.our-portfolio .section-header {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color:#2E2F42;
+}
+.our-portfolio .our-porfolio-item-header{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color:#2E2F42;
+}
+.our-portfolio .our-porfolio-item-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#434455;
+    
+}
+
+/* Footer */
+
+.page-footer{
+    color: #F4F4FD;
+    background-color: #2E2F42;
+}
+
+.page-footer .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.page-footer .logo .logo-studio {
+    color:#f4f4fd
+}
+.page-footer .footer-paragraph {
+    letter-spacing: 0.02em;
+}
