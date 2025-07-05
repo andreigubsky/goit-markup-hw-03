@@ -12,8 +12,17 @@ CSS-правила для скидання дефолтного підкресл
 
 Зроби зображення блочними елементами
 Визнач ширину та падінги для контейнера та пропиши їх у CSS-файлі: .container
-*/
 
+
+
+Для розташування елементів використовується Flexbox, 
+але тільки там, де це необхідно. 
+Наприклад у шапці, навігації, списках в секціях тощо, тобто там, 
+де розташувати елементи горизонтально по-іншому неможливо.
+*/
+*,*::after,*::before {
+    box-sizing: border-box;
+}
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
@@ -30,7 +39,7 @@ h1, h2, h3, h4, h5, h6{
 p {
     margin: 0;
 }
-ul, ol {
+ul {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
@@ -40,16 +49,37 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+/**/
+img {
+    display: block;
+    max-width: 100%;
+}
+.thumb img {
+    
+   
+    object-fit: cover;
+}
+/**/
 
 .container { 
-    max-width: ;
-    padding-left:  ;
-    padding-right:  ;
-    margin-left:  ;
-    margin-right:  ;
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    /**/
+    border: 1px dashed green;
     }
 
 /* Header */
+/* У хедера є нижня рамка, необхідно сильно наблизити макет, щоб побачити її. */
+.page-header .container {
+    border-bottom: 1px solid #E7E9FC;
+    display:flex;
+    padding: 24px 0;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -58,59 +88,92 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    border: 1px dashed violet;
+    margin-left: 156px;
 }
-
 .logo span {
     color:#2e2f42;
 }
 
-.top-menu-items {
+.top-menu {
     font-weight: 500;
     letter-spacing: 0.02em;
+    display: flex;
+    /*
+    justify-content: space-between;
+    justify-items: center;
+    */
+    gap: 40px;
+    margin-left: 76px;
 }
-.top-menu-items .top-menu-item{
+.top-menu .top-menu-item{
     color:#2E2F42;
+    display: block;
+    padding: 0 10px;
+    border: 1px dashed red;
 }
 
-.top-menu-items a:hover, .top-menu-items a:focus {
+.top-menu a:hover, .top-menu a:focus {
     color: #404BBF;
 } 
+.menu-contacts {
+    font-style: normal;
+    display: flex;
+    margin-left: 332px;
+    gap: 40px;
+}
 .menu-contacts .contacts-item {
     letter-spacing: 0.02em;
+    display: flex;
+    border: 1px dashed blue;
+    
 }
 .menu-contacts a:hover, .menu-contacts a:focus {
     color: #404BBF;
 } 
-address {
-    font-style: normal;
-}
 
 /* 
 Main ->
 Section main-page 
 */
-
-.main-page {
+/**/
+.section {
     text-align: center;
     letter-spacing: 0.02em;
-    background-color: #2E2F42;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0;
     
 }
-.main-page .main-page-header {
+/**/
+
+main .section:first-child {
+     background-color: #2E2F42;
+     width: 100%;
+}
+
+.section .main-page-header {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
+    width: 496px;
+    margin: 0 auto;
+   
 }
-.main-page .main-button {
+.section .main-button {
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4D5AE5;
+    margin-top: 68px;
+    padding: 16px 32px;
+    border:none;
+    border-radius: 4px;
 }
-.main-page .main-button:hover, .main-page .main-button:focus {
+.section .main-button:hover, .section .main-button:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
@@ -119,7 +182,7 @@ Section main-page
 Main ->
 Section our-benefits
 */
-.our-benefits .section-header {
+.section .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.2;
@@ -129,14 +192,14 @@ Section our-benefits
     color:#2E2F42;
 }
 
-.our-benefits .our-benefits-header {
+.section .our-benefits-header {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2E2F42;
 }
-.our-benefits .our-benefits-paragraph{
+.section .our-benefits-paragraph{
     color:#434455;
     letter-spacing: 0.02em;
 }
@@ -146,11 +209,10 @@ Main ->
 Section our-team 
 */
 
-.our-team {
-    text-align: center;
+.section {
     background-color: #F4F4FD;
 }
-.our-team .section-header {
+.section .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.11;
@@ -160,11 +222,11 @@ Section our-team
     color:#2E2F42;
 }
 
-.our-team li{
+.section li{
     background-color: #fff;   
 }
 
-.our-team .our-team-header{
+.section .our-team-header{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -173,7 +235,7 @@ Section our-team
     letter-spacing: 0.02em;
     color:#2E2F42;
 }
-.our-team .our-team-paragraph{
+.section .our-team-paragraph{
     color:#434455;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -184,14 +246,17 @@ Main ->
 Section our-portfolio
 */
 
-.our-portfolio{
+.section{
     color:#434455;
     font-size: 36px;
     line-height: 1.11;
 
 }
-
-.our-portfolio .section-header {
+/*.our-portfolio .our-porfolio-item{
+    border-bottom: 1px solid grey;
+}
+*/
+.section .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.11;
@@ -200,7 +265,7 @@ Section our-portfolio
     text-transform: capitalize;
     color:#2E2F42;
 }
-.our-portfolio .our-porfolio-item-header{
+.section .our-porfolio-item-header{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -208,7 +273,7 @@ Section our-portfolio
     letter-spacing: 0.02em;
     color:#2E2F42;
 }
-.our-portfolio .our-porfolio-item-paragraph {
+.section .our-porfolio-item-paragraph {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
