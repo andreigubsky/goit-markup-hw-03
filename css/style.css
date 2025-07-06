@@ -92,7 +92,6 @@ img {
 }
 .logo span {
     color:#2e2f42;
-    
 }
 .top-menu {
     font-weight: 500;
@@ -100,7 +99,6 @@ img {
     display: flex;
     width: 261px;
     justify-content: space-between;
-    
     gap: 40px;
     margin-left: 76px;
 }
@@ -109,7 +107,6 @@ img {
     border: 1px dashed red;
     display: block;
 }
-
 .top-menu a:hover, .top-menu a:focus {
     color: #404BBF;
 } 
@@ -123,7 +120,6 @@ img {
     letter-spacing: 0.02em;
     border: 1px dashed red;
     display: flex;
-    
 }
 .menu-contacts a:hover, .menu-contacts a:focus {
     color: #404BBF;
@@ -142,13 +138,13 @@ Section main-page
     padding-left: 156px;
     padding-right: 156px;
     margin: 0;
-    
+    border: 1px solid brown;
 }
 /**/
 
 main .section:first-child {
      background-color: #2E2F42;
-     width: 100%;
+     padding: 188px 0;
 }
 
 .section .main-page-header {
@@ -157,10 +153,9 @@ main .section:first-child {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
-    width: 496px;
-    margin: 0 auto;
     border: 1px dashed white;
-   
+    width: 596px;
+    margin: 0 auto;
 }
 .section .main-button {
     line-height: 1.5;
@@ -182,17 +177,8 @@ main .section:first-child {
 Main ->
 Section our-benefits
 */
-.benefits-list{
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-top: 72px;
-}
-.benefits-list li{
-border: 1px dashed grey;
 
-}
-.section .section-header {
+.section:nth-child(2) .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.2;
@@ -201,21 +187,35 @@ border: 1px dashed grey;
     text-transform: capitalize;
     color:#2E2F42;
 }
+.benefits-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 72px;
+}
+.benefits-list li{
+    border: 1px dashed grey;
 
-.benefits-list .our-benefits-header {
+}
+.benefits-list .benefit-item {
+    width: calc((100% - 24px) / 4);
+}
+.benefits-list .benefits-header {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: left;
     color:#2E2F42;
+    border: 1px dashed blueviolet;
 }
-.benefits-list .our-benefits-paragraph{
+.benefits-list .benefits-paragraph{
     color:#434455;
     letter-spacing: 0.02em;
     font-size: 16px;
     text-align: left;
     margin-top: 8px;
+    border: 1px dashed blueviolet;
 }
 
 /* 
@@ -223,7 +223,7 @@ Main ->
 Section our-team 
 */
 
-.section {
+.section:nth-child(3) {
     background-color: #F4F4FD;
 }
 .section .section-header {
@@ -247,6 +247,7 @@ Section our-team
     background-color: #fff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    width: calc((100% - 24px) / 4);
     border: 1px dashed grey;
 }
 .our-team-member .thumb{
@@ -298,6 +299,7 @@ Section our-portfolio
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     gap: 24px;
     margin-top: 72px;
 }
@@ -325,6 +327,10 @@ Section our-portfolio
     background-color: #2E2F42;
 }
 
+.page-footer .container p{
+    width: 264px;
+}
+
 .page-footer .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -341,8 +347,8 @@ Section our-portfolio
 .page-footer .footer-paragraph {
     letter-spacing: 0.02em;
 }
-
+/*
 * {
     border: none !important;
 }
-    
+    */
