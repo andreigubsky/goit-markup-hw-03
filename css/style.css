@@ -148,7 +148,7 @@ Section main-page
     letter-spacing: 0.02em;
     color: #fff;
     /*border: 1px dashed white;*/
-    width: 596px;
+    max-width: 496px;
     margin: 0 auto;
 }
 .section:first-child .main-button {
@@ -161,8 +161,11 @@ Section main-page
     padding: 16px 32px;
     border:none;
     border-radius: 4px;
+    display: block;
+    margin: 48px auto 0;
+    min-width: 169px;
 }
-.section:first-child  .main-button:hover, .section:first-child .main-button:focus {
+.main-button:hover, .main-button:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
@@ -181,6 +184,9 @@ Section our-benefits
     text-transform: capitalize;
     color:#2E2F42;
 }
+.visually-hidden {
+    visibility: hidden;
+}
 .benefits-list{
     display: flex;
     justify-content: space-between;
@@ -197,13 +203,13 @@ Section our-benefits
     letter-spacing: 0.02em;
     text-align: left;
     color:#2E2F42;
+    margin-bottom: 8px;
 }
 .benefits-list .benefits-paragraph{
     color:#434455;
     letter-spacing: 0.02em;
     font-size: 16px;
-    text-align: left;
-    margin-top: 8px;
+    text-align: left;   
 }
 
 /* 
@@ -222,6 +228,7 @@ Section our-team
     text-align: center;
     text-transform: capitalize;
     color:#2E2F42;
+    margin-bottom: 72px;
 }
 .team-list {
     display: flex;
@@ -246,12 +253,13 @@ Section our-team
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color:#2E2F42;
+    margin-bottom: 8px;
 }
 .team-paragraph{
     color:#434455;
     font-size: 16px;
     letter-spacing: 0.02em;
-    margin-top: 8px;
+    
 }
 
 /*
@@ -272,6 +280,7 @@ Section our-portfolio
     text-align: center;
     text-transform: capitalize;
     color:#2E2F42;
+    margin-bottom: 72px;
 }
 .portfolio-list{
     display: flex;
@@ -286,9 +295,8 @@ Section our-portfolio
     text-align: left;
 }
 .porfolio-item .thumb{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 .portfolio-list .porfolio-item-header{
     font-size: 20px;
@@ -297,13 +305,13 @@ Section our-portfolio
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color:#2E2F42;
+    margin-bottom: 8px;
 }
 .portfolio-list .porfolio-item-paragraph {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#434455;
-    margin-top: 8px;
 }
 
 /* Footer */
@@ -311,6 +319,7 @@ Section our-portfolio
 .page-footer{
     color: #F4F4FD;
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 .page-footer .container p{
     width: 264px;
@@ -323,6 +332,8 @@ Section our-portfolio
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .page-footer .logo .logo-studio {
     color:#f4f4fd
