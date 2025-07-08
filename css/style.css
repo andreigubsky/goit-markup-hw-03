@@ -116,11 +116,18 @@ address .menu-contacts {
     font-style: normal;
     display: flex;
     margin-left: 332px;
-    gap: 40px;
+    
 }
 .menu-contacts .contacts-item {
     letter-spacing: 0.02em;
     display: flex;
+    gap: 40px;
+}
+.menu-contacts .contacts-item li{
+    margin-right: 40px;
+}
+.menu-contacts .contacts-item:last-child li{
+    margin-right: 0;
 }
 .menu-contacts a:hover, .menu-contacts a:focus {
     color: #404BBF;
