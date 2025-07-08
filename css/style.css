@@ -291,7 +291,7 @@ Section our-portfolio
     text-transform: capitalize;
     color:#2E2F42;
 }
-.portfolio-list{
+.portfolio-list{ё
     display: flex;
     flex-wrap: wrap;
     align-content: center;
