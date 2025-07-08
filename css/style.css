@@ -61,20 +61,26 @@ img {
 
 .container { 
     max-width: 1158px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15;
+    padding-right: 15;
     margin-left: auto;
     margin-right: auto;
     }
 
 /* Header */
 /* У хедера є нижня рамка, необхідно сильно наблизити макет, щоб побачити її. */
-.page-header .container {
+.page-header {
     border-bottom: 1px solid #E7E9FC;
+}
+.page-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 0;
+}
+.navigation{
+    display: flex;
+    align-items: center;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -84,6 +90,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-top: 76px;
 }
 .logo span {
     color:#2e2f42;
@@ -100,11 +107,12 @@ img {
 .top-menu .top-menu-item{
     color:#2E2F42;
     display: block;
+    padding: 24px 0;
 }
 .top-menu a:hover, .top-menu a:focus {
     color: #404BBF;
 } 
-.menu-contacts {
+address .menu-contacts {
     font-style: normal;
     display: flex;
     margin-left: 332px;
@@ -195,12 +203,11 @@ Section our-benefits
     margin: -1px;
     border: 0;
     padding: 0;
-    
-    /*white-space: nowrap;
+    white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0 0 0 0);*/
+    clip: rect(0 0 0 0);
     overflow: hidden;
-}
+  }
 .benefits-list{
     display: flex;
     justify-content: space-between;
@@ -298,7 +305,7 @@ Section our-portfolio
     color:#2E2F42;
     margin-bottom: 72px;
 }
-.portfolio-list{ё
+.portfolio-list{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
