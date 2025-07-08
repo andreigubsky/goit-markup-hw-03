@@ -61,10 +61,8 @@ img {
 
 .container { 
     max-width: 1158px;
-    padding-left: 15;
-    padding-right: 15;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 15px;
+    margin: 0 auto;
     }
 
 /* Header */
@@ -90,7 +88,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-top: 76px;
+    margin-right: 76px;
 }
 .logo span {
     color:#2e2f42;
@@ -115,18 +113,18 @@ img {
 address .menu-contacts {
     font-style: normal;
     display: flex;
-    margin-left: 332px;
-    
+   /* margin-left: 332px;*/
+    gap: 40px;
 }
 .menu-contacts .contacts-item {
     letter-spacing: 0.02em;
     display: flex;
-    gap: 40px;
+    
 }
-.menu-contacts .contacts-item li{
+.menu-contacts li{
     margin-right: 40px;
 }
-.menu-contacts .contacts-item:last-child li{
+.menu-contacts:last-child li{
     margin-right: 0;
 }
 .menu-contacts a:hover, .menu-contacts a:focus {
