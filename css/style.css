@@ -164,8 +164,9 @@ Section main-page
     display: block;
     margin: 48px auto 0;
     min-width: 169px;
+    cursor: pointer;
 }
-.main-button:hover, .main-button:focus {
+.section:first-child .main-button:hover, .section:first-child .main-button:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
@@ -174,6 +175,9 @@ Section main-page
 Main ->
 Section our-benefits
 */
+.section:nth-child(2){
+    padding: 120px 0 120px 0;
+}
 
 .section:nth-child(2) .section-header {
     font-size: 36px;
@@ -185,7 +189,17 @@ Section our-benefits
     color:#2E2F42;
 }
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    /*white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);*/
+    overflow: hidden;
 }
 .benefits-list{
     display: flex;
@@ -219,6 +233,7 @@ Section our-team
 
 .section:nth-child(3) {
     background-color: #F4F4FD;
+    padding: 120px 0 120px 0;
 }
 .section:nth-child(3) .section-header {
     font-size: 36px;
@@ -271,6 +286,7 @@ Section our-portfolio
     color:#434455;
     font-size: 36px;
     line-height: 1.11;
+    padding: 120px 0 120px 0;
 }
 .section:nth-child(4) .section-header {
     font-size: 36px;
@@ -297,6 +313,7 @@ Section our-portfolio
 .porfolio-item .thumb{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-list .porfolio-item-header{
     font-size: 20px;
