@@ -108,7 +108,7 @@ img {
 .top-menu .top-menu-item{
     color:#2E2F42;
     display: block;
-    
+    padding: 24px 0;
 }
 .top-menu a:hover, .top-menu a:focus {
     color: #404BBF;
