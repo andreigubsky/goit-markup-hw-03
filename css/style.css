@@ -76,7 +76,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
 }
 .navigation{
     display: flex;
@@ -91,6 +90,7 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding: 24px 0;
 }
 .logo span {
     color:#2e2f42;
@@ -103,11 +103,12 @@ img {
     justify-content: space-between;
     gap: 40px;
     margin-left: 76px;
+    
 }
 .top-menu .top-menu-item{
     color:#2E2F42;
     display: block;
-    padding: 24px 0;
+    
 }
 .top-menu a:hover, .top-menu a:focus {
     color: #404BBF;
