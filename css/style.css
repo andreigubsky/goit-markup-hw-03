@@ -20,22 +20,17 @@ CSS-правила для скидання дефолтного підкресл
 Наприклад у шапці, навігації, списках в секціях тощо, тобто там, 
 де розташувати елементи горизонтально по-іншому неможливо.
 */
-*,*::after,*::before {
-    box-sizing: border-box;
-}
+
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     color: #434455;
     background-color: #fff;
-    width: 1440px;
-    margin: 0 auto;
 
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "Raleway", sans-serif;
     margin: 0;
-    padding: 0;
     
 }
 p {
@@ -55,7 +50,7 @@ a {
 img {
     display: block;
     max-width: 100%;
-    object-fit: cover;
+    height: auto;
 }
 /**/
 
@@ -89,6 +84,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+}
+.navigation .logo {
     margin-right: 76px;
     padding: 24px 0;
 }
@@ -99,10 +96,7 @@ img {
     font-weight: 500;
     letter-spacing: 0.02em;
     display: flex;
-    width: 261px;
-    justify-content: space-between;
     gap: 40px;
-    margin-left: 76px;
     
 }
 .top-menu .top-menu-item{
@@ -121,7 +115,7 @@ address .menu-contacts {
 }
 .menu-contacts .contacts-item {
     letter-spacing: 0.02em;
-    display: flex;
+    
     
 }
 .menu-contacts li{
@@ -138,13 +132,11 @@ address .menu-contacts {
 All sections
 */
 .section {
-    text-align: center;
-    letter-spacing: 0.02em;
+
+
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin: 0;
+    
     /*border: 1px solid brown;*/
 }
 /* 
@@ -152,9 +144,10 @@ Main ->
 Section main-page 
 */
 
-.section:first-child {
+.section.main-page {
      background-color: #2E2F42;
      padding: 188px 0;
+     text-align: center;
 }
 
 .section .main-page-header {
@@ -167,7 +160,7 @@ Section main-page
     max-width: 496px;
     margin: 0 auto;
 }
-.section:first-child .main-button {
+.section.main-page .main-button {
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -182,7 +175,7 @@ Section main-page
     min-width: 169px;
     cursor: pointer;
 }
-.section:first-child .main-button:hover, .section:first-child .main-button:focus {
+.section.main-page .main-button:hover, .section:first-child .main-button:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
@@ -191,11 +184,11 @@ Section main-page
 Main ->
 Section our-benefits
 */
-.section:nth-child(2){
+.section.benefits{
     padding: 120px 0 120px 0;
 }
 
-.section:nth-child(2) .section-header {
+.section.benefits .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.2;
@@ -220,7 +213,7 @@ Section our-benefits
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    margin-top: 72px;
+    
 }
 .benefits-list .benefit-item {
     flex-basis: calc((100% - 24px) / 4);
@@ -230,7 +223,6 @@ Section our-benefits
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: left;
     color:#2E2F42;
     margin-bottom: 8px;
 }
@@ -246,11 +238,11 @@ Main ->
 Section our-team 
 */
 
-.section:nth-child(3) {
+.section.team {
     background-color: #F4F4FD;
     padding: 120px 0 120px 0;
 }
-.section:nth-child(3) .section-header {
+.section.team .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.11;
@@ -263,8 +255,6 @@ Section our-team
 .team-list {
     display: flex;
     gap: 24px;
-    margin-top: 72px;
-    padding: 0;
 }
 .team-member{
     background-color: #fff;
@@ -289,6 +279,7 @@ Section our-team
     color:#434455;
     font-size: 16px;
     letter-spacing: 0.02em;
+    text-align: center;
     
 }
 
@@ -297,13 +288,13 @@ Main ->
 Section our-portfolio
 */
 
-.section:nth-child(4){
+.section.portfolio{
     color:#434455;
     font-size: 36px;
     line-height: 1.11;
     padding: 120px 0 120px 0;
 }
-.section:nth-child(4) .section-header {
+.section.portfolio .section-header {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.11;
@@ -319,11 +310,9 @@ Section our-portfolio
     align-content: center;
     column-gap: 24px;
     row-gap: 48px;
-    margin-top: 72px;
 }
 .porfolio-item{
     width: calc((100% - 48px)/3);
-    text-align: left;
 }
 .porfolio-item .thumb{
     padding: 32px 16px;
@@ -354,7 +343,7 @@ Section our-portfolio
     padding: 100px 0;
 }
 .page-footer .container p{
-    width: 264px;
+    max-width: 264px;
 }
 .page-footer .logo {
     font-family: 'Raleway', sans-serif;
